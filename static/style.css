@@ -1,0 +1,53 @@
+html, body {
+    height: 100%
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    grid-area: body;
+}
+
+body > main > div {
+    margin-left: 15px;
+}
+
+header {
+    background-color: darkcyan;
+    color: white;
+    font-size: 1.5em;
+    grid-area: header;
+}
+
+header > h1 {
+    padding: 15px;
+    
+}
+
+header > a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin: 0;
+    background-color: darkcyan;
+    color: white;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+div {
+    margin-bottom: 50px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "body body"
+        "footer footer";
+        grid-template-rows: 20% 70% 10%;
+}
